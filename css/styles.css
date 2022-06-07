@@ -67,7 +67,7 @@
 
 .about-features-classes {
   display: grid;
-  grid-template-areas: 'about' 'classes' 'features';
+  grid-template-areas: 'about' 'classes ' 'features ';
   background-color: black; }
 
 #about-us {
@@ -132,6 +132,11 @@
 
 .features-images-four {
   grid-area: features4; }
+
+@media screen and (min-width: 319px) and (max-width: 424px) {
+  .features-images img {
+    width: 300px;
+    height: 200px; } }
 
 @media screen and (max-width: 769px) {
   .features-images {

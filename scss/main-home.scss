@@ -2,8 +2,8 @@
     display: grid;
     grid-template-areas: 
     'about'
-    'classes'
-    'features';
+    'classes '
+    'features ';
     background-color: black;
 }
 
@@ -91,6 +91,13 @@
     grid-area: features4;
 }
 
+@media screen and (min-width: 319px) and (max-width: 424px) {
+    .features-images img {
+        width: 300px;
+        height: 200px;
+    }   
+}
+
 @media screen and (max-width:769px) {
     .features-images {
         grid-template-areas: 
@@ -143,7 +150,7 @@
     }
 }
 
-@media screen and (min-width:700px) {
+@media screen and (min-width: 700px) {
     .about-features-classes {
         grid-template-areas: 
         'about classes classes'
